@@ -10,13 +10,11 @@
 
 <body>
   <div id="app">
-    <h1>Keyboard Events</h1>
-    <label>Name:</label>
-    <input type="text" v-model="name">
-    <span>{{name}}</span>
-    <label>Age:</label>
-    <input type="text" v-model="age">
-    <span>{{age}}</span>
+    <h1>Computered Properties</h1>
+    <button @click="a++">Add to A</button>
+    <button @click="b++">Add to B</button>
+    <p>A is {{a}}</p>
+    <p>B is {{b}}</p>
   </div>
 
   <script src="app.js"></script>

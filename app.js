@@ -1,8 +1,9 @@
 new Vue({
   el: "#app",
   data: {
-    name: "",
-    age: ""
+    a: 0,
+    b: 0,
+    age: 25
   },
   methods: {}
 });
