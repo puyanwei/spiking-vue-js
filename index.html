@@ -18,6 +18,11 @@
       <template v-for="(move, index) in moves">
         <h3>{{ index }}. {{ move.name }} - {{ move.move }}</h3>
       </template>
+      <template v-for="move in moves">
+        <div v-for="(val, key) in move">
+          <p>{{ key }} - {{ val }}</p>
+        </div>
+      </template>
     </ul>
   </div>
 
