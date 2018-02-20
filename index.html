@@ -11,7 +11,9 @@
 <body>
   <div id="app">
     <h1>Data Binding</h1>
-    <a :href="website">google</a>
+    <a v-bind:href="website">google</a>
+    <input type="text" v-bind:value="job">
+    <p v-html="websiteTag"></p>
   </div>
 
   <script src="app.js"></script>
