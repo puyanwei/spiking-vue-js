@@ -5,8 +5,8 @@ new Vue({
     job: "The Builder"
   },
   methods: {
-    greet: function() {
-      return "Hey man, wassup!";
+    greet: function(time) {
+      return "Hey man, wassup! Good " + time;
     }
   }
 });
