@@ -12,10 +12,12 @@
   <div id="app">
     <h1>For Loops</h1>
     <ul>
-      <li v-for="chracter in characters">{{ chracter }}</li>
+      <li v-for="(chracter, index) in characters">{{ index }}. {{ chracter }}</li>
     </ul>
     <ul>
-      <li v-for="(move, index) in moves"> {{ index }}. {{ move.name }} - {{ move.move }}</li>
+      <template v-for="(move, index) in moves">
+        <h3>{{ index }}. {{ move.name }} - {{ move.move }}</h3>
+      </template>
     </ul>
   </div>
 
