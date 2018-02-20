@@ -10,13 +10,10 @@
 
 <body>
   <div id="app">
-    <h1>Computed Properties</h1>
-    <button @click="a++">Add to A</button>
-    <button @click="b++">Add to B</button>
-    <p>A is {{ a }}</p>
-    <p>B is {{ b }}</p>
-    <p>Age + A = {{ addToA }}</p>
-    <p>Age + B = {{ addToB }}</p>
+    <h1>Dynamic CSS</h1>
+    <h2>Example 1</h2>
+    <div :class="{ available }"></div>
+    <h2>Example 2</h2>
   </div>
 
   <script src="app.js"></script>
