@@ -5,5 +5,12 @@ new Vue({
     b: 0,
     age: 25
   },
-  methods: {}
+  methods: {
+    addToA: function() {
+      return this.a + this.age;
+    },
+    addToB: function() {
+      return this.b + this.age;
+    }
+  }
 });
