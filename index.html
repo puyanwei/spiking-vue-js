@@ -13,9 +13,17 @@
     <h1>Dynamic CSS</h1>
     <h2>Example 1</h2>
     <div @click="available = !available" :class="{ available: available }">
-      <span>Puyan</span>
+      <span>CLICK ME</span>
     </div>
+    <br>
     <h2>Example 2</h2>
+    <button @click="nearby = !nearby">Toggle nearby</button>
+    <button @click="available = !available">Toggle available</button>
+    <br>
+    <br>
+    <div :class="compClasses">
+      <span>CLICK ME</span>
+    </div>
   </div>
 
   <script src="app.js"></script>
