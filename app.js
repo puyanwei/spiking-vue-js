@@ -1,3 +1,6 @@
 new Vue({
-  el: "#vue-app"
+  el: "#app",
+  data: {
+    name: "Bob"
+  }
 });
