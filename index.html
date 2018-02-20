@@ -10,16 +10,11 @@
 
 <body>
   <div id="app">
-    <h1>Events</h1>
-    <p>My age is {{ age }}</p>
-    <button @click.once="add(1)">Add</button>
-    <button @click="subtract(1)">Subtract</button>
-    <button @dblclick="add(10)">Add 10</button>
-    <button @dblclick="subtract(10)">Subtract 10</button>
-    <br>
-    <br>
-    <div id="canvas" @mousemove="updateXY">{{ x }}, {{ y }}</div>
-    <a @click.prevent="click" href="http://www.google.com">Go to Google</a>
+    <h1>Keyboard Events</h1>
+    <label>Name:</label>
+    <input type="text" @keyup="logName">
+    <label>Age:</label>
+    <input type="text" @keyup="logAge">
   </div>
 
   <script src="app.js"></script>
