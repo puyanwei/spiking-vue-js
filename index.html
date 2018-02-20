@@ -10,10 +10,11 @@
 
 <body>
   <div id="app">
-    <h1>Data Binding</h1>
-    <a v-bind:href="website">google</a>
-    <input type="text" v-bind:value="job">
-    <p v-html="websiteTag"></p>
+    <h1>Events</h1>
+    <p>My age is {{ age }}</p>
+    <button v-on:click="age++">Add</button>
+    <button v-on:click="age--">Subtract</button>
+
   </div>
 
   <script src="app.js"></script>
