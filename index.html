@@ -10,20 +10,9 @@
 
 <body>
   <div id="app">
-    <h1>Dynamic CSS</h1>
-    <h2>Example 1</h2>
-    <div @click="available = !available" :class="{ available: available }">
-      <span>CLICK ME</span>
-    </div>
-    <br>
-    <h2>Example 2</h2>
-    <button @click="nearby = !nearby">Toggle nearby</button>
-    <button @click="available = !available">Toggle available</button>
-    <br>
-    <br>
-    <div :class="compClasses">
-      <span>CLICK ME</span>
-    </div>
+    <h1>Conditionals</h1>
+    <button @click="error=!error">Toggle Error</button>
+    <button @click="success=!success">Toggle Success</button>
   </div>
 
   <script src="app.js"></script>
