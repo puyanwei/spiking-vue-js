@@ -12,7 +12,9 @@
   <div id="app">
     <h1>Dynamic CSS</h1>
     <h2>Example 1</h2>
-    <div :class="{ available }"></div>
+    <div @click="available = !available" :class="{ available: available }">
+      <span>Puyan</span>
+    </div>
     <h2>Example 2</h2>
   </div>
 
