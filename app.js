@@ -4,8 +4,5 @@ new Vue({
     name: "",
     age: ""
   },
-  methods: {
-    logName: function() {},
-    logAge: function() {}
-  }
+  methods: {}
 });
