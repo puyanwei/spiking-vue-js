@@ -16,6 +16,9 @@
     <button v-on:click="subtract(1)">Subtract</button>
     <button v-on:dblclick="add(10)">Add 10</button>
     <button v-on:dblclick="subtract(10)">Subtract 10</button>
+    <br>
+    <br>
+    <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
 
   </div>
 
