@@ -1,14 +1,13 @@
-new Vue({
-  el: "#app",
-  data: {
-    name: "Street Fighter",
-    characters: ["Ryu", "Ken", "Chun-Li", "Guile", "Cammy"],
-    moves: [
-      { name: "Ryu", move: "Dragon Punch" },
-      { name: "Chun-Li", move: "Spinning Bird Kick" },
-      { name: "Guile", move: "Sonic Boom" }
-    ]
-  },
+var one = new Vue({
+  el: "#app-one",
+  data: {},
+  methods: {},
+  computed: {}
+});
+
+var two = new Vue({
+  el: "#app-two",
+  data: {},
   methods: {},
   computed: {}
 });
