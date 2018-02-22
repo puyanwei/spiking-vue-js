@@ -1,9 +1,12 @@
 new Vue({
   el: "#app",
-  data: {},
+  data: {
+    output: "Your fave video game"
+  },
   methods: {
     readRefs: function() {
-      console.log(this.$refs.input.value);
+      this.output = this.$refs.input.value;
+      console.log(this.$refs.test.innerHTML);
     }
   },
   computed: {}
