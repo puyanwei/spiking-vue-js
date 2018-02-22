@@ -1,31 +1,17 @@
+Vue.component("greeting", {
+  template: "<p>I am a re-useable component</p>"
+});
+
 var one = new Vue({
   el: "#app-one",
-  data: {
-    title: "Vue App One"
-  },
+  data: {},
   methods: {},
-  computed: {
-    greet: function() {
-      return "Hello this is app one";
-    }
-  }
+  computed: {}
 });
 
 var two = new Vue({
   el: "#app-two",
-  data: {
-    title: "Vue App Two"
-  },
-  methods: {
-    changeTitle: function() {
-      one.title = "Title changed from App Two!";
-    }
-  },
-  computed: {
-    greet: function() {
-      return "Hello this is app two";
-    }
-  }
+  data: {},
+  methods: {},
+  computed: {}
 });
-
-two.title = "Changed from outside";
